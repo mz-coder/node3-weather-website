@@ -22,14 +22,14 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'Mo Ziad'
+        name: 'MZ-Coder'
     })
 })
 
 app.get('/about',(req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Mo Ziad'
+        name: 'MZ-Coder'
     })
 })
 
@@ -37,7 +37,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help Page',
         message: 'Frequently asked questions',
-        name: 'Mo Ziad'
+        name: 'MZ-Coder'
     })
 })
 
@@ -68,11 +68,6 @@ app.get('/weather', (req, res) => {
             })
         })
     })  
-    // res.send({
-    //     forecast: 'It is snowing',
-    //     location: req.query.address
-    // })
-
 
 })
 app.get('/products', (req, res) => {
@@ -88,14 +83,14 @@ app.get('/help/*', (req, res) => {
     res.render('404error', {
         error:'Help article not found',
         title: 'Help Page Error',
-        name: 'Mo Ziad'
+        name: 'MZ-Coder'
     })
 })
 app.get('*', (req, res) => {
     res.render('404error', {
         error: 'My 404 page',
         title: 'Page Error',
-        name: 'Mo Ziad'
+        name: 'MZ-Coder'
     })
 })
 
