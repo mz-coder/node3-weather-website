@@ -40,10 +40,7 @@ app.get('/help', (req, res) => {
         name: 'Mo Ziad'
     })
 })
-// const aboutPath = path.join(publicDirectoryPath + '/about.html')
-// app.use(express.static(aboutPath))
-// const helpPath = path.join(publicDirectoryPath + '/help.html')
-// app.use(express.static(helpPath))
+
 
 app.get('/weather', (req, res) => {
 
